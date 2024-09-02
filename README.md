@@ -19,7 +19,7 @@ The Vehicle Routing Problem (VRP) is a classic combinatorial optimization issue 
 
 - Routing Constraints: The fleet of vehicles must visit all customers, but a customer can onl be visited by one vehicle only one time.
 
-### ** Objective Function: ** 
+### Objective Function: 
 The primary aim is to minimize the comprehensive transportation cost, incorporating factors such as the total distance covered, time taken, and other operational expenses.
 
 Addressing the VRP entails determining an optimal or near-optimal set of routes that adhere to all specified constraints. A variety of optimization algorithms, including heuristics, metaheuristics, and exact methods, can be applied based on the complexity and scale of different VRP instances. The VRP finds extensive application in industries such as transportation, distribution, and logistics, where efficient route planning contributes to substantial cost savings and enhanced service quality.
