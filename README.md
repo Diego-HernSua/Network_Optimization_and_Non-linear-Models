@@ -3,7 +3,7 @@ Formulate the network optimization problem as a discrete model, identifying math
 
 ---
 
-# 1. Network Optimization:MULTIPLE VEHICLE ROUTING PROBLEM
+# 1. Network Optimization: MULTIPLE VEHICLE ROUTING PROBLEM
 
 The Vehicle Routing Problem (VRP) is a classic combinatorial optimization issue prevalent in logistics and transportation. Its primary objective is to strategically plan routes for a fleet of vehicles to efficiently serve a specified set of customers, each with known demands for goods or services. The fundamental challenge revolves around minimizing the overall transportation cost, often measured in terms of distance traveled, time taken, or other pertinent metrics.
 
