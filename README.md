@@ -1,40 +1,50 @@
-# Network Optimization and Non-linear Models
-Formulate the network optimization problem as a discrete model, identifying mathematically the variables and constraints associated with the network. Formulate (mathematically) and solve a non-linear optimization problem based on real (or realistic) world data.
+# 🛠️ Network Optimization and Non-linear Models
+
+In this project, we delve into two critical optimization problems: **Network Optimization** focusing on the Vehicle Routing Problem (VRP) and a **Non-linear Optimization** problem centered around the Wood Production industry. These problems represent real-world challenges in logistics and manufacturing, offering valuable insights into optimization techniques.
 
 ---
 
-# 1. Network Optimization: MULTIPLE VEHICLE ROUTING PROBLEM
+## 1. 🚚 Network Optimization: MULTIPLE VEHICLE ROUTING PROBLEM
 
-The Vehicle Routing Problem (VRP) is a classic combinatorial optimization issue prevalent in logistics and transportation. Its primary objective is to strategically plan routes for a fleet of vehicles to efficiently serve a specified set of customers, each with known demands for goods or services. The fundamental challenge revolves around minimizing the overall transportation cost, often measured in terms of distance traveled, time taken, or other pertinent metrics.
+The **Vehicle Routing Problem (VRP)** is a cornerstone in combinatorial optimization, widely used in logistics and transportation. The main objective is to plan optimal routes for a fleet of vehicles to efficiently serve a set of customers, each with specific demands. The goal is to minimize overall transportation costs, such as distance traveled or time spent, while adhering to constraints.
 
-### Key Components of the VRP:
+### 🧩 Key Components of the VRP:
 
-- Customers: The problem revolves around a group of customers, each situated at specific geographical points.
+- **Customers**: Each customer is located at a specific geographical point, with a known demand.
+  
+- **Vehicle Fleet**: A set of identical vehicles, each with a limited carrying capacity.
 
-- Vehicle Fleet: A fleet of identical vehicles, each equipped with limited capacity for transporting goods or delivering services.
+- **Customer Demand**: Each customer has a predetermined demand that needs to be fulfilled by the vehicles.
 
-- Customer Demand: Each customer possesses a predetermined demand for goods or services, a requirement that the delivery vehicles must fulfill.
+- **Vehicle Capacity**: Each vehicle has a maximum capacity that cannot be exceeded.
 
-- Vehicle Capacity: Vehicles are constrained by a limited capacity for carrying goods, with the total demand served by a vehicle in a route not exceeding its designated capacity.
+- **Routing Constraints**: Every customer must be visited exactly once by one vehicle. The fleet must collectively visit all customers.
 
-- Routing Constraints: The fleet of vehicles must visit all customers, but a customer can onl be visited by one vehicle only one time.
+### 🎯 Objective Function:
+Minimize the total transportation cost, which may include distance, time, or other operational expenses.
 
-### Objective Function: 
-The primary aim is to minimize the comprehensive transportation cost, incorporating factors such as the total distance covered, time taken, and other operational expenses.
+To solve the VRP, we identify the optimal set of routes under the given constraints. Various algorithms, from heuristics to exact methods, can be applied depending on the problem's complexity. VRP is extensively used in sectors like transportation, distribution, and logistics, where efficient routing leads to significant cost savings and improved service quality.
 
-Addressing the VRP entails determining an optimal or near-optimal set of routes that adhere to all specified constraints. A variety of optimization algorithms, including heuristics, metaheuristics, and exact methods, can be applied based on the complexity and scale of different VRP instances. The VRP finds extensive application in industries such as transportation, distribution, and logistics, where efficient route planning contributes to substantial cost savings and enhanced service quality.
-
-In this case, assume a delivery company which objective is to study where to place the deposits to station the vehicles and the main purpose is to try to hand in all the packages traveling the lowest distance as possible. In this case, we will work with a fleet of 2 vehicles that will need to deliver all the packages travelling the minimum distance as possible taking advantage that there are 2 vehicles instead of only 1. For our project, we will not take into consideration the return to the deposit because we want to focus on optimizing the most optimal path to serve all the customers as fast as possible.
+### 🚀 Case Study:
+Consider a delivery company aiming to strategically place depots to station vehicles. The goal is to deliver all packages while minimizing the total distance traveled, leveraging a fleet of 2 vehicles. Unlike traditional VRP, the return to the depot is not considered here, focusing solely on the optimal path to serve all customers as quickly as possible.
 
 ---
 
-# 2. Non-linear optimization: WOOD PRODUCTION PROBLEM
+## 2. 🪵 Non-linear Optimization: WOOD PRODUCTION PROBLEM
 
-Woodworking has deep roots in history, evolving from primitive tool-making to the creation of intricate carvings, architecture, and furniture. Today, the woodworking industry balances tradition with modern technology, facing both challenges and opportunities. While technological advancements have enabled mass production, there is still a strong appreciation for artisanal craftsmanship.
+Woodworking, a craft with ancient roots, has evolved into a sophisticated industry that blends tradition with modern technology. Today, woodworking faces the challenge of balancing artisanal quality with efficient mass production.
 
-Wood selection is crucial, as different woods offer unique qualities that affect durability, aesthetics, and workability. Our project addresses contemporary challenges in woodworking, focusing on optimizing the dimensions of wooden pieces to maximize profit. This involves balancing wood characteristics with production constraints, such as volume, surface area, and minimum output requirements.
+### 🌳 Project Overview:
+In this project, we address contemporary challenges in woodworking by optimizing the dimensions of wooden pieces to maximize profit. This involves balancing the unique characteristics of different woods with production constraints, such as volume, surface area, and minimum output requirements.
 
-Using Pyomo, we developed a model that incorporates the non-linear cost functions associated with different wood types. The aim is to determine the most profitable dimensions, considering how size impacts production costs and market demands. The project highlights the importance of optimizing wood dimensions to ensure quality and profitability, bridging the gap between traditional woodworking practices and modern optimization techniques.
+### 🛠️ Optimization Approach:
+Using **Pyomo**, we developed a model to optimize the non-linear cost functions associated with different wood types. The objective is to determine the most profitable dimensions, considering how size affects production costs and market demand. This project underscores the importance of dimension optimization to ensure both quality and profitability, bridging traditional woodworking techniques with modern optimization methods.
 
-In the Non-linear model file, we will detail the optimization model, exploring the cost functions, constraints, and mathematical framework that guide our approach. This project honors the heritage of woodworking while embracing technology to enhance future practices.
+### 📈 Detailed Model:
+The non-linear optimization model explores cost functions, constraints, and the mathematical framework guiding our approach. This project honors the rich heritage of woodworking while embracing technological advancements to enhance future practices.
+
+---
+
+By addressing these two distinct yet interconnected optimization challenges, this project provides a comprehensive look at how mathematical models can solve real-world problems in logistics and manufacturing.
+
 
